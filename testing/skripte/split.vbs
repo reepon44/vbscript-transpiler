@@ -1,0 +1,1 @@
+Wscript.Echo split("test;string", ";")

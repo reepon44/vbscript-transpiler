@@ -1,0 +1,1 @@
+Wscript.Echo trim("Test")

@@ -1,0 +1,1 @@
+Wscript.Echo Mid("Test", -1, 5)

@@ -1,0 +1,2747 @@
+# Generated from ./grammar/VBScript.g4 by ANTLR 4.13.2
+# encoding: utf-8
+from antlr4 import *
+from io import StringIO
+import sys
+if sys.version_info[1] > 5:
+	from typing import TextIO
+else:
+	from typing.io import TextIO
+
+def serializedATN():
+    return [
+        4,1,38,287,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
+        2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,2,19,7,19,2,20,
+        7,20,2,21,7,21,2,22,7,22,1,0,5,0,48,8,0,10,0,12,0,51,9,0,1,0,1,0,
+        1,1,1,1,1,1,5,1,58,8,1,10,1,12,1,61,9,1,3,1,63,8,1,1,1,1,1,1,2,1,
+        2,1,2,1,2,1,2,1,2,1,2,1,2,3,2,75,8,2,1,3,1,3,3,3,79,8,3,1,4,1,4,
+        3,4,83,8,4,1,4,1,4,3,4,87,8,4,1,4,3,4,90,8,4,1,4,1,4,1,4,1,4,5,4,
+        96,8,4,10,4,12,4,99,9,4,1,4,1,4,1,4,3,4,104,8,4,1,4,1,4,1,4,1,5,
+        1,5,3,5,111,8,5,1,5,1,5,3,5,115,8,5,1,5,3,5,118,8,5,1,5,1,5,1,5,
+        1,5,1,6,1,6,1,6,1,6,1,6,1,6,3,6,130,8,6,1,7,1,7,1,7,1,7,1,7,5,7,
+        137,8,7,10,7,12,7,140,9,7,1,7,1,7,1,8,1,8,1,8,1,8,1,8,1,8,1,8,5,
+        8,151,8,8,10,8,12,8,154,9,8,1,8,1,8,1,9,1,9,1,9,3,9,161,8,9,1,9,
+        1,9,1,9,3,9,166,8,9,1,10,1,10,1,10,1,10,1,10,3,10,173,8,10,1,10,
+        1,10,1,10,1,10,3,10,179,8,10,1,11,1,11,1,11,5,11,184,8,11,10,11,
+        12,11,187,9,11,1,12,3,12,190,8,12,1,12,1,12,1,12,1,12,1,13,1,13,
+        3,13,198,8,13,1,14,1,14,1,14,3,14,203,8,14,1,15,1,15,1,15,1,15,1,
+        15,1,15,1,15,1,15,3,15,213,8,15,1,16,1,16,1,16,1,16,1,16,5,16,220,
+        8,16,10,16,12,16,223,9,16,1,17,1,17,1,17,5,17,228,8,17,10,17,12,
+        17,231,9,17,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,3,
+        18,243,8,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,
+        18,1,18,1,18,1,18,1,18,5,18,260,8,18,10,18,12,18,263,9,18,1,19,1,
+        19,1,19,3,19,268,8,19,1,19,3,19,271,8,19,1,20,1,20,1,20,3,20,276,
+        8,20,1,21,1,21,1,21,1,22,5,22,282,8,22,10,22,12,22,285,9,22,1,22,
+        0,1,36,23,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,
+        40,42,44,0,1,1,0,20,23,313,0,49,1,0,0,0,2,62,1,0,0,0,4,74,1,0,0,
+        0,6,78,1,0,0,0,8,80,1,0,0,0,10,108,1,0,0,0,12,123,1,0,0,0,14,131,
+        1,0,0,0,16,143,1,0,0,0,18,165,1,0,0,0,20,167,1,0,0,0,22,180,1,0,
+        0,0,24,189,1,0,0,0,26,197,1,0,0,0,28,199,1,0,0,0,30,212,1,0,0,0,
+        32,214,1,0,0,0,34,224,1,0,0,0,36,242,1,0,0,0,38,264,1,0,0,0,40,275,
+        1,0,0,0,42,277,1,0,0,0,44,283,1,0,0,0,46,48,3,2,1,0,47,46,1,0,0,
+        0,48,51,1,0,0,0,49,47,1,0,0,0,49,50,1,0,0,0,50,52,1,0,0,0,51,49,
+        1,0,0,0,52,53,5,0,0,1,53,1,1,0,0,0,54,59,3,4,2,0,55,56,5,34,0,0,
+        56,58,3,4,2,0,57,55,1,0,0,0,58,61,1,0,0,0,59,57,1,0,0,0,59,60,1,
+        0,0,0,60,63,1,0,0,0,61,59,1,0,0,0,62,54,1,0,0,0,62,63,1,0,0,0,63,
+        64,1,0,0,0,64,65,5,36,0,0,65,3,1,0,0,0,66,75,3,6,3,0,67,75,3,18,
+        9,0,68,75,3,20,10,0,69,75,3,24,12,0,70,75,3,42,21,0,71,75,3,14,7,
+        0,72,75,3,16,8,0,73,75,3,34,17,0,74,66,1,0,0,0,74,67,1,0,0,0,74,
+        68,1,0,0,0,74,69,1,0,0,0,74,70,1,0,0,0,74,71,1,0,0,0,74,72,1,0,0,
+        0,74,73,1,0,0,0,75,5,1,0,0,0,76,79,3,8,4,0,77,79,3,12,6,0,78,76,
+        1,0,0,0,78,77,1,0,0,0,79,7,1,0,0,0,80,82,5,5,0,0,81,83,5,30,0,0,
+        82,81,1,0,0,0,82,83,1,0,0,0,83,86,1,0,0,0,84,87,3,34,17,0,85,87,
+        3,30,15,0,86,84,1,0,0,0,86,85,1,0,0,0,87,89,1,0,0,0,88,90,5,31,0,
+        0,89,88,1,0,0,0,89,90,1,0,0,0,90,91,1,0,0,0,91,92,5,6,0,0,92,93,
+        5,36,0,0,93,97,3,44,22,0,94,96,3,10,5,0,95,94,1,0,0,0,96,99,1,0,
+        0,0,97,95,1,0,0,0,97,98,1,0,0,0,98,103,1,0,0,0,99,97,1,0,0,0,100,
+        101,5,7,0,0,101,102,5,36,0,0,102,104,3,44,22,0,103,100,1,0,0,0,103,
+        104,1,0,0,0,104,105,1,0,0,0,105,106,5,10,0,0,106,107,5,5,0,0,107,
+        9,1,0,0,0,108,110,5,8,0,0,109,111,5,30,0,0,110,109,1,0,0,0,110,111,
+        1,0,0,0,111,114,1,0,0,0,112,115,3,34,17,0,113,115,3,30,15,0,114,
+        112,1,0,0,0,114,113,1,0,0,0,115,117,1,0,0,0,116,118,5,31,0,0,117,
+        116,1,0,0,0,117,118,1,0,0,0,118,119,1,0,0,0,119,120,5,6,0,0,120,
+        121,5,36,0,0,121,122,3,44,22,0,122,11,1,0,0,0,123,124,5,5,0,0,124,
+        125,3,34,17,0,125,126,5,6,0,0,126,129,3,4,2,0,127,128,5,7,0,0,128,
+        130,3,4,2,0,129,127,1,0,0,0,129,130,1,0,0,0,130,13,1,0,0,0,131,132,
+        5,1,0,0,132,133,5,2,0,0,133,134,3,34,17,0,134,138,5,36,0,0,135,137,
+        3,2,1,0,136,135,1,0,0,0,137,140,1,0,0,0,138,136,1,0,0,0,138,139,
+        1,0,0,0,139,141,1,0,0,0,140,138,1,0,0,0,141,142,5,3,0,0,142,15,1,
+        0,0,0,143,144,5,11,0,0,144,145,5,12,0,0,145,146,3,34,17,0,146,147,
+        5,13,0,0,147,148,3,34,17,0,148,152,5,36,0,0,149,151,3,2,1,0,150,
+        149,1,0,0,0,151,154,1,0,0,0,152,150,1,0,0,0,152,153,1,0,0,0,153,
+        155,1,0,0,0,154,152,1,0,0,0,155,156,5,14,0,0,156,17,1,0,0,0,157,
+        158,5,16,0,0,158,160,5,30,0,0,159,161,3,22,11,0,160,159,1,0,0,0,
+        160,161,1,0,0,0,161,162,1,0,0,0,162,166,5,31,0,0,163,164,5,16,0,
+        0,164,166,3,34,17,0,165,157,1,0,0,0,165,163,1,0,0,0,166,19,1,0,0,
+        0,167,168,5,16,0,0,168,169,5,33,0,0,169,178,5,16,0,0,170,172,5,30,
+        0,0,171,173,3,22,11,0,172,171,1,0,0,0,172,173,1,0,0,0,173,174,1,
+        0,0,0,174,179,5,31,0,0,175,179,3,22,11,0,176,177,5,33,0,0,177,179,
+        3,20,10,0,178,170,1,0,0,0,178,175,1,0,0,0,178,176,1,0,0,0,178,179,
+        1,0,0,0,179,21,1,0,0,0,180,185,3,34,17,0,181,182,5,32,0,0,182,184,
+        3,34,17,0,183,181,1,0,0,0,184,187,1,0,0,0,185,183,1,0,0,0,185,186,
+        1,0,0,0,186,23,1,0,0,0,187,185,1,0,0,0,188,190,5,4,0,0,189,188,1,
+        0,0,0,189,190,1,0,0,0,190,191,1,0,0,0,191,192,3,26,13,0,192,193,
+        5,24,0,0,193,194,3,28,14,0,194,25,1,0,0,0,195,198,5,16,0,0,196,198,
+        3,18,9,0,197,195,1,0,0,0,197,196,1,0,0,0,198,27,1,0,0,0,199,202,
+        3,40,20,0,200,201,7,0,0,0,201,203,3,40,20,0,202,200,1,0,0,0,202,
+        203,1,0,0,0,203,29,1,0,0,0,204,205,3,34,17,0,205,206,5,24,0,0,206,
+        207,3,34,17,0,207,213,1,0,0,0,208,209,3,34,17,0,209,210,5,24,0,0,
+        210,211,3,34,17,0,211,213,1,0,0,0,212,204,1,0,0,0,212,208,1,0,0,
+        0,213,31,1,0,0,0,214,215,3,36,18,0,215,216,5,19,0,0,216,221,3,36,
+        18,0,217,218,5,19,0,0,218,220,3,36,18,0,219,217,1,0,0,0,220,223,
+        1,0,0,0,221,219,1,0,0,0,221,222,1,0,0,0,222,33,1,0,0,0,223,221,1,
+        0,0,0,224,229,3,36,18,0,225,226,5,33,0,0,226,228,3,38,19,0,227,225,
+        1,0,0,0,228,231,1,0,0,0,229,227,1,0,0,0,229,230,1,0,0,0,230,35,1,
+        0,0,0,231,229,1,0,0,0,232,233,6,18,-1,0,233,243,3,18,9,0,234,243,
+        3,20,10,0,235,243,5,16,0,0,236,243,5,18,0,0,237,243,5,17,0,0,238,
+        239,5,30,0,0,239,240,3,34,17,0,240,241,5,31,0,0,241,243,1,0,0,0,
+        242,232,1,0,0,0,242,234,1,0,0,0,242,235,1,0,0,0,242,236,1,0,0,0,
+        242,237,1,0,0,0,242,238,1,0,0,0,243,261,1,0,0,0,244,245,10,5,0,0,
+        245,246,5,19,0,0,246,260,3,36,18,6,247,248,10,4,0,0,248,249,5,20,
+        0,0,249,260,3,36,18,5,250,251,10,3,0,0,251,252,5,21,0,0,252,260,
+        3,36,18,4,253,254,10,2,0,0,254,255,5,22,0,0,255,260,3,36,18,3,256,
+        257,10,1,0,0,257,258,5,23,0,0,258,260,3,36,18,2,259,244,1,0,0,0,
+        259,247,1,0,0,0,259,250,1,0,0,0,259,253,1,0,0,0,259,256,1,0,0,0,
+        260,263,1,0,0,0,261,259,1,0,0,0,261,262,1,0,0,0,262,37,1,0,0,0,263,
+        261,1,0,0,0,264,270,5,16,0,0,265,267,5,30,0,0,266,268,3,22,11,0,
+        267,266,1,0,0,0,267,268,1,0,0,0,268,269,1,0,0,0,269,271,5,31,0,0,
+        270,265,1,0,0,0,270,271,1,0,0,0,271,39,1,0,0,0,272,276,3,18,9,0,
+        273,276,3,20,10,0,274,276,3,34,17,0,275,272,1,0,0,0,275,273,1,0,
+        0,0,275,274,1,0,0,0,276,41,1,0,0,0,277,278,5,15,0,0,278,279,3,34,
+        17,0,279,43,1,0,0,0,280,282,3,2,1,0,281,280,1,0,0,0,282,285,1,0,
+        0,0,283,281,1,0,0,0,283,284,1,0,0,0,284,45,1,0,0,0,285,283,1,0,0,
+        0,34,49,59,62,74,78,82,86,89,97,103,110,114,117,129,138,152,160,
+        165,172,178,185,189,197,202,212,221,229,242,259,261,267,270,275,
+        283
+    ]
+
+class VBScriptParser ( Parser ):
+
+    grammarFileName = "VBScript.g4"
+
+    atn = ATNDeserializer().deserialize(serializedATN())
+
+    decisionsToDFA = [ DFA(ds, i) for i, ds in enumerate(atn.decisionToState) ]
+
+    sharedContextCache = PredictionContextCache()
+
+    literalNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                     "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                     "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                     "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                     "<INVALID>", "<INVALID>", "<INVALID>", "'&'", "'+'", 
+                     "'-'", "'*'", "'/'", "'='", "'<>'", "'<'", "'<='", 
+                     "'>'", "'>='", "'('", "')'", "','", "'.'", "':'", "';'" ]
+
+    symbolicNames = [ "<INVALID>", "DO", "UNTIL", "LOOP", "SET", "IF", "THEN", 
+                      "ELSE", "ELSEIF", "ENDIF", "END", "FOR", "EACH", "IN", 
+                      "NEXT", "EXECUTEGLOBAL", "IDENTIFIER", "NUMBER", "STRING", 
+                      "AMP", "PLUS", "MINUS", "STAR", "DIV", "EQ", "NEQ", 
+                      "LT", "LE", "GT", "GE", "LPAREN", "RPAREN", "COMMA", 
+                      "DOT", "COLON", "SEMI", "NEWLINE", "COMMENT", "WS" ]
+
+    RULE_prog = 0
+    RULE_line = 1
+    RULE_statement = 2
+    RULE_ifBlock = 3
+    RULE_ifMultiLine = 4
+    RULE_elseifBlock = 5
+    RULE_ifSingleLine = 6
+    RULE_doUntilLoop = 7
+    RULE_forEachLoop = 8
+    RULE_functionCall = 9
+    RULE_procedureCall = 10
+    RULE_argList = 11
+    RULE_assignment = 12
+    RULE_assignable = 13
+    RULE_exprWithOp = 14
+    RULE_comparison = 15
+    RULE_concatenation = 16
+    RULE_expr = 17
+    RULE_primaryExpr = 18
+    RULE_chainedCall = 19
+    RULE_valueExpr = 20
+    RULE_executeglobalStmt = 21
+    RULE_block = 22
+
+    ruleNames =  [ "prog", "line", "statement", "ifBlock", "ifMultiLine", 
+                   "elseifBlock", "ifSingleLine", "doUntilLoop", "forEachLoop", 
+                   "functionCall", "procedureCall", "argList", "assignment", 
+                   "assignable", "exprWithOp", "comparison", "concatenation", 
+                   "expr", "primaryExpr", "chainedCall", "valueExpr", "executeglobalStmt", 
+                   "block" ]
+
+    EOF = Token.EOF
+    DO=1
+    UNTIL=2
+    LOOP=3
+    SET=4
+    IF=5
+    THEN=6
+    ELSE=7
+    ELSEIF=8
+    ENDIF=9
+    END=10
+    FOR=11
+    EACH=12
+    IN=13
+    NEXT=14
+    EXECUTEGLOBAL=15
+    IDENTIFIER=16
+    NUMBER=17
+    STRING=18
+    AMP=19
+    PLUS=20
+    MINUS=21
+    STAR=22
+    DIV=23
+    EQ=24
+    NEQ=25
+    LT=26
+    LE=27
+    GT=28
+    GE=29
+    LPAREN=30
+    RPAREN=31
+    COMMA=32
+    DOT=33
+    COLON=34
+    SEMI=35
+    NEWLINE=36
+    COMMENT=37
+    WS=38
+
+    def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
+        super().__init__(input, output)
+        self.checkVersion("4.13.2")
+        self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
+        self._predicates = None
+
+
+
+
+    class ProgContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def EOF(self):
+            return self.getToken(VBScriptParser.EOF, 0)
+
+        def line(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(VBScriptParser.LineContext)
+            else:
+                return self.getTypedRuleContext(VBScriptParser.LineContext,i)
+
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_prog
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterProg" ):
+                listener.enterProg(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitProg" ):
+                listener.exitProg(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitProg" ):
+                return visitor.visitProg(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def prog(self):
+
+        localctx = VBScriptParser.ProgContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 0, self.RULE_prog)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 49
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 69793712178) != 0):
+                self.state = 46
+                self.line()
+                self.state = 51
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+
+            self.state = 52
+            self.match(VBScriptParser.EOF)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class LineContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def NEWLINE(self):
+            return self.getToken(VBScriptParser.NEWLINE, 0)
+
+        def statement(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(VBScriptParser.StatementContext)
+            else:
+                return self.getTypedRuleContext(VBScriptParser.StatementContext,i)
+
+
+        def COLON(self, i:int=None):
+            if i is None:
+                return self.getTokens(VBScriptParser.COLON)
+            else:
+                return self.getToken(VBScriptParser.COLON, i)
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_line
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterLine" ):
+                listener.enterLine(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitLine" ):
+                listener.exitLine(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitLine" ):
+                return visitor.visitLine(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def line(self):
+
+        localctx = VBScriptParser.LineContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 2, self.RULE_line)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 62
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 1074235442) != 0):
+                self.state = 54
+                self.statement()
+                self.state = 59
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                while _la==34:
+                    self.state = 55
+                    self.match(VBScriptParser.COLON)
+                    self.state = 56
+                    self.statement()
+                    self.state = 61
+                    self._errHandler.sync(self)
+                    _la = self._input.LA(1)
+
+
+
+            self.state = 64
+            self.match(VBScriptParser.NEWLINE)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class StatementContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_statement
+
+     
+        def copyFrom(self, ctx:ParserRuleContext):
+            super().copyFrom(ctx)
+
+
+
+    class StmtIfBlockContext(StatementContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a VBScriptParser.StatementContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def ifBlock(self):
+            return self.getTypedRuleContext(VBScriptParser.IfBlockContext,0)
+
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterStmtIfBlock" ):
+                listener.enterStmtIfBlock(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitStmtIfBlock" ):
+                listener.exitStmtIfBlock(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitStmtIfBlock" ):
+                return visitor.visitStmtIfBlock(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class ProcCallContext(StatementContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a VBScriptParser.StatementContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def procedureCall(self):
+            return self.getTypedRuleContext(VBScriptParser.ProcedureCallContext,0)
+
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterProcCall" ):
+                listener.enterProcCall(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitProcCall" ):
+                listener.exitProcCall(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitProcCall" ):
+                return visitor.visitProcCall(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class StmtFunctionCallContext(StatementContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a VBScriptParser.StatementContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def functionCall(self):
+            return self.getTypedRuleContext(VBScriptParser.FunctionCallContext,0)
+
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterStmtFunctionCall" ):
+                listener.enterStmtFunctionCall(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitStmtFunctionCall" ):
+                listener.exitStmtFunctionCall(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitStmtFunctionCall" ):
+                return visitor.visitStmtFunctionCall(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class StmtAssignmentContext(StatementContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a VBScriptParser.StatementContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def assignment(self):
+            return self.getTypedRuleContext(VBScriptParser.AssignmentContext,0)
+
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterStmtAssignment" ):
+                listener.enterStmtAssignment(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitStmtAssignment" ):
+                listener.exitStmtAssignment(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitStmtAssignment" ):
+                return visitor.visitStmtAssignment(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class StmtOtherContext(StatementContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a VBScriptParser.StatementContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def expr(self):
+            return self.getTypedRuleContext(VBScriptParser.ExprContext,0)
+
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterStmtOther" ):
+                listener.enterStmtOther(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitStmtOther" ):
+                listener.exitStmtOther(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitStmtOther" ):
+                return visitor.visitStmtOther(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class StmtForEachLoopContext(StatementContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a VBScriptParser.StatementContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def forEachLoop(self):
+            return self.getTypedRuleContext(VBScriptParser.ForEachLoopContext,0)
+
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterStmtForEachLoop" ):
+                listener.enterStmtForEachLoop(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitStmtForEachLoop" ):
+                listener.exitStmtForEachLoop(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitStmtForEachLoop" ):
+                return visitor.visitStmtForEachLoop(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class StmtExecuteGlobalContext(StatementContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a VBScriptParser.StatementContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def executeglobalStmt(self):
+            return self.getTypedRuleContext(VBScriptParser.ExecuteglobalStmtContext,0)
+
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterStmtExecuteGlobal" ):
+                listener.enterStmtExecuteGlobal(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitStmtExecuteGlobal" ):
+                listener.exitStmtExecuteGlobal(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitStmtExecuteGlobal" ):
+                return visitor.visitStmtExecuteGlobal(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class StmtDoUntilLoopContext(StatementContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a VBScriptParser.StatementContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def doUntilLoop(self):
+            return self.getTypedRuleContext(VBScriptParser.DoUntilLoopContext,0)
+
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterStmtDoUntilLoop" ):
+                listener.enterStmtDoUntilLoop(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitStmtDoUntilLoop" ):
+                listener.exitStmtDoUntilLoop(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitStmtDoUntilLoop" ):
+                return visitor.visitStmtDoUntilLoop(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+    def statement(self):
+
+        localctx = VBScriptParser.StatementContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 4, self.RULE_statement)
+        try:
+            self.state = 74
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,3,self._ctx)
+            if la_ == 1:
+                localctx = VBScriptParser.StmtIfBlockContext(self, localctx)
+                self.enterOuterAlt(localctx, 1)
+                self.state = 66
+                self.ifBlock()
+                pass
+
+            elif la_ == 2:
+                localctx = VBScriptParser.StmtFunctionCallContext(self, localctx)
+                self.enterOuterAlt(localctx, 2)
+                self.state = 67
+                self.functionCall()
+                pass
+
+            elif la_ == 3:
+                localctx = VBScriptParser.ProcCallContext(self, localctx)
+                self.enterOuterAlt(localctx, 3)
+                self.state = 68
+                self.procedureCall()
+                pass
+
+            elif la_ == 4:
+                localctx = VBScriptParser.StmtAssignmentContext(self, localctx)
+                self.enterOuterAlt(localctx, 4)
+                self.state = 69
+                self.assignment()
+                pass
+
+            elif la_ == 5:
+                localctx = VBScriptParser.StmtExecuteGlobalContext(self, localctx)
+                self.enterOuterAlt(localctx, 5)
+                self.state = 70
+                self.executeglobalStmt()
+                pass
+
+            elif la_ == 6:
+                localctx = VBScriptParser.StmtDoUntilLoopContext(self, localctx)
+                self.enterOuterAlt(localctx, 6)
+                self.state = 71
+                self.doUntilLoop()
+                pass
+
+            elif la_ == 7:
+                localctx = VBScriptParser.StmtForEachLoopContext(self, localctx)
+                self.enterOuterAlt(localctx, 7)
+                self.state = 72
+                self.forEachLoop()
+                pass
+
+            elif la_ == 8:
+                localctx = VBScriptParser.StmtOtherContext(self, localctx)
+                self.enterOuterAlt(localctx, 8)
+                self.state = 73
+                self.expr()
+                pass
+
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class IfBlockContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def ifMultiLine(self):
+            return self.getTypedRuleContext(VBScriptParser.IfMultiLineContext,0)
+
+
+        def ifSingleLine(self):
+            return self.getTypedRuleContext(VBScriptParser.IfSingleLineContext,0)
+
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_ifBlock
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterIfBlock" ):
+                listener.enterIfBlock(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitIfBlock" ):
+                listener.exitIfBlock(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitIfBlock" ):
+                return visitor.visitIfBlock(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def ifBlock(self):
+
+        localctx = VBScriptParser.IfBlockContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 6, self.RULE_ifBlock)
+        try:
+            self.state = 78
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,4,self._ctx)
+            if la_ == 1:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 76
+                self.ifMultiLine()
+                pass
+
+            elif la_ == 2:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 77
+                self.ifSingleLine()
+                pass
+
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class IfMultiLineContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+            self.thenBlock = None # BlockContext
+            self.elifBlock = None # ElseifBlockContext
+            self.elseBlock = None # BlockContext
+
+        def IF(self, i:int=None):
+            if i is None:
+                return self.getTokens(VBScriptParser.IF)
+            else:
+                return self.getToken(VBScriptParser.IF, i)
+
+        def THEN(self):
+            return self.getToken(VBScriptParser.THEN, 0)
+
+        def NEWLINE(self, i:int=None):
+            if i is None:
+                return self.getTokens(VBScriptParser.NEWLINE)
+            else:
+                return self.getToken(VBScriptParser.NEWLINE, i)
+
+        def END(self):
+            return self.getToken(VBScriptParser.END, 0)
+
+        def block(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(VBScriptParser.BlockContext)
+            else:
+                return self.getTypedRuleContext(VBScriptParser.BlockContext,i)
+
+
+        def expr(self):
+            return self.getTypedRuleContext(VBScriptParser.ExprContext,0)
+
+
+        def comparison(self):
+            return self.getTypedRuleContext(VBScriptParser.ComparisonContext,0)
+
+
+        def LPAREN(self):
+            return self.getToken(VBScriptParser.LPAREN, 0)
+
+        def RPAREN(self):
+            return self.getToken(VBScriptParser.RPAREN, 0)
+
+        def ELSE(self):
+            return self.getToken(VBScriptParser.ELSE, 0)
+
+        def elseifBlock(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(VBScriptParser.ElseifBlockContext)
+            else:
+                return self.getTypedRuleContext(VBScriptParser.ElseifBlockContext,i)
+
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_ifMultiLine
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterIfMultiLine" ):
+                listener.enterIfMultiLine(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitIfMultiLine" ):
+                listener.exitIfMultiLine(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitIfMultiLine" ):
+                return visitor.visitIfMultiLine(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def ifMultiLine(self):
+
+        localctx = VBScriptParser.IfMultiLineContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 8, self.RULE_ifMultiLine)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 80
+            self.match(VBScriptParser.IF)
+            self.state = 82
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,5,self._ctx)
+            if la_ == 1:
+                self.state = 81
+                self.match(VBScriptParser.LPAREN)
+
+
+            self.state = 86
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,6,self._ctx)
+            if la_ == 1:
+                self.state = 84
+                self.expr()
+                pass
+
+            elif la_ == 2:
+                self.state = 85
+                self.comparison()
+                pass
+
+
+            self.state = 89
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            if _la==31:
+                self.state = 88
+                self.match(VBScriptParser.RPAREN)
+
+
+            self.state = 91
+            self.match(VBScriptParser.THEN)
+            self.state = 92
+            self.match(VBScriptParser.NEWLINE)
+            self.state = 93
+            localctx.thenBlock = self.block()
+            self.state = 97
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            while _la==8:
+                self.state = 94
+                localctx.elifBlock = self.elseifBlock()
+                self.state = 99
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+
+            self.state = 103
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            if _la==7:
+                self.state = 100
+                self.match(VBScriptParser.ELSE)
+                self.state = 101
+                self.match(VBScriptParser.NEWLINE)
+                self.state = 102
+                localctx.elseBlock = self.block()
+
+
+            self.state = 105
+            self.match(VBScriptParser.END)
+            self.state = 106
+            self.match(VBScriptParser.IF)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ElseifBlockContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def ELSEIF(self):
+            return self.getToken(VBScriptParser.ELSEIF, 0)
+
+        def THEN(self):
+            return self.getToken(VBScriptParser.THEN, 0)
+
+        def NEWLINE(self):
+            return self.getToken(VBScriptParser.NEWLINE, 0)
+
+        def block(self):
+            return self.getTypedRuleContext(VBScriptParser.BlockContext,0)
+
+
+        def expr(self):
+            return self.getTypedRuleContext(VBScriptParser.ExprContext,0)
+
+
+        def comparison(self):
+            return self.getTypedRuleContext(VBScriptParser.ComparisonContext,0)
+
+
+        def LPAREN(self):
+            return self.getToken(VBScriptParser.LPAREN, 0)
+
+        def RPAREN(self):
+            return self.getToken(VBScriptParser.RPAREN, 0)
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_elseifBlock
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterElseifBlock" ):
+                listener.enterElseifBlock(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitElseifBlock" ):
+                listener.exitElseifBlock(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitElseifBlock" ):
+                return visitor.visitElseifBlock(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def elseifBlock(self):
+
+        localctx = VBScriptParser.ElseifBlockContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 10, self.RULE_elseifBlock)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 108
+            self.match(VBScriptParser.ELSEIF)
+            self.state = 110
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,10,self._ctx)
+            if la_ == 1:
+                self.state = 109
+                self.match(VBScriptParser.LPAREN)
+
+
+            self.state = 114
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,11,self._ctx)
+            if la_ == 1:
+                self.state = 112
+                self.expr()
+                pass
+
+            elif la_ == 2:
+                self.state = 113
+                self.comparison()
+                pass
+
+
+            self.state = 117
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            if _la==31:
+                self.state = 116
+                self.match(VBScriptParser.RPAREN)
+
+
+            self.state = 119
+            self.match(VBScriptParser.THEN)
+            self.state = 120
+            self.match(VBScriptParser.NEWLINE)
+            self.state = 121
+            self.block()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class IfSingleLineContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def IF(self):
+            return self.getToken(VBScriptParser.IF, 0)
+
+        def expr(self):
+            return self.getTypedRuleContext(VBScriptParser.ExprContext,0)
+
+
+        def THEN(self):
+            return self.getToken(VBScriptParser.THEN, 0)
+
+        def statement(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(VBScriptParser.StatementContext)
+            else:
+                return self.getTypedRuleContext(VBScriptParser.StatementContext,i)
+
+
+        def ELSE(self):
+            return self.getToken(VBScriptParser.ELSE, 0)
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_ifSingleLine
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterIfSingleLine" ):
+                listener.enterIfSingleLine(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitIfSingleLine" ):
+                listener.exitIfSingleLine(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitIfSingleLine" ):
+                return visitor.visitIfSingleLine(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def ifSingleLine(self):
+
+        localctx = VBScriptParser.IfSingleLineContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 12, self.RULE_ifSingleLine)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 123
+            self.match(VBScriptParser.IF)
+            self.state = 124
+            self.expr()
+            self.state = 125
+            self.match(VBScriptParser.THEN)
+            self.state = 126
+            self.statement()
+            self.state = 129
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,13,self._ctx)
+            if la_ == 1:
+                self.state = 127
+                self.match(VBScriptParser.ELSE)
+                self.state = 128
+                self.statement()
+
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class DoUntilLoopContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def DO(self):
+            return self.getToken(VBScriptParser.DO, 0)
+
+        def UNTIL(self):
+            return self.getToken(VBScriptParser.UNTIL, 0)
+
+        def expr(self):
+            return self.getTypedRuleContext(VBScriptParser.ExprContext,0)
+
+
+        def NEWLINE(self):
+            return self.getToken(VBScriptParser.NEWLINE, 0)
+
+        def LOOP(self):
+            return self.getToken(VBScriptParser.LOOP, 0)
+
+        def line(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(VBScriptParser.LineContext)
+            else:
+                return self.getTypedRuleContext(VBScriptParser.LineContext,i)
+
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_doUntilLoop
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterDoUntilLoop" ):
+                listener.enterDoUntilLoop(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitDoUntilLoop" ):
+                listener.exitDoUntilLoop(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitDoUntilLoop" ):
+                return visitor.visitDoUntilLoop(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def doUntilLoop(self):
+
+        localctx = VBScriptParser.DoUntilLoopContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 14, self.RULE_doUntilLoop)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 131
+            self.match(VBScriptParser.DO)
+            self.state = 132
+            self.match(VBScriptParser.UNTIL)
+            self.state = 133
+            self.expr()
+            self.state = 134
+            self.match(VBScriptParser.NEWLINE)
+            self.state = 138
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 69793712178) != 0):
+                self.state = 135
+                self.line()
+                self.state = 140
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+
+            self.state = 141
+            self.match(VBScriptParser.LOOP)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ForEachLoopContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def FOR(self):
+            return self.getToken(VBScriptParser.FOR, 0)
+
+        def EACH(self):
+            return self.getToken(VBScriptParser.EACH, 0)
+
+        def expr(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(VBScriptParser.ExprContext)
+            else:
+                return self.getTypedRuleContext(VBScriptParser.ExprContext,i)
+
+
+        def IN(self):
+            return self.getToken(VBScriptParser.IN, 0)
+
+        def NEWLINE(self):
+            return self.getToken(VBScriptParser.NEWLINE, 0)
+
+        def NEXT(self):
+            return self.getToken(VBScriptParser.NEXT, 0)
+
+        def line(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(VBScriptParser.LineContext)
+            else:
+                return self.getTypedRuleContext(VBScriptParser.LineContext,i)
+
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_forEachLoop
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterForEachLoop" ):
+                listener.enterForEachLoop(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitForEachLoop" ):
+                listener.exitForEachLoop(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitForEachLoop" ):
+                return visitor.visitForEachLoop(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def forEachLoop(self):
+
+        localctx = VBScriptParser.ForEachLoopContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 16, self.RULE_forEachLoop)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 143
+            self.match(VBScriptParser.FOR)
+            self.state = 144
+            self.match(VBScriptParser.EACH)
+            self.state = 145
+            self.expr()
+            self.state = 146
+            self.match(VBScriptParser.IN)
+            self.state = 147
+            self.expr()
+            self.state = 148
+            self.match(VBScriptParser.NEWLINE)
+            self.state = 152
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 69793712178) != 0):
+                self.state = 149
+                self.line()
+                self.state = 154
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+
+            self.state = 155
+            self.match(VBScriptParser.NEXT)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class FunctionCallContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def IDENTIFIER(self):
+            return self.getToken(VBScriptParser.IDENTIFIER, 0)
+
+        def LPAREN(self):
+            return self.getToken(VBScriptParser.LPAREN, 0)
+
+        def RPAREN(self):
+            return self.getToken(VBScriptParser.RPAREN, 0)
+
+        def argList(self):
+            return self.getTypedRuleContext(VBScriptParser.ArgListContext,0)
+
+
+        def expr(self):
+            return self.getTypedRuleContext(VBScriptParser.ExprContext,0)
+
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_functionCall
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFunctionCall" ):
+                listener.enterFunctionCall(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFunctionCall" ):
+                listener.exitFunctionCall(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFunctionCall" ):
+                return visitor.visitFunctionCall(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def functionCall(self):
+
+        localctx = VBScriptParser.FunctionCallContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 18, self.RULE_functionCall)
+        self._la = 0 # Token type
+        try:
+            self.state = 165
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,17,self._ctx)
+            if la_ == 1:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 157
+                self.match(VBScriptParser.IDENTIFIER)
+                self.state = 158
+                self.match(VBScriptParser.LPAREN)
+                self.state = 160
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & 1074200576) != 0):
+                    self.state = 159
+                    self.argList()
+
+
+                self.state = 162
+                self.match(VBScriptParser.RPAREN)
+                pass
+
+            elif la_ == 2:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 163
+                self.match(VBScriptParser.IDENTIFIER)
+                self.state = 164
+                self.expr()
+                pass
+
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ProcedureCallContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def IDENTIFIER(self, i:int=None):
+            if i is None:
+                return self.getTokens(VBScriptParser.IDENTIFIER)
+            else:
+                return self.getToken(VBScriptParser.IDENTIFIER, i)
+
+        def DOT(self, i:int=None):
+            if i is None:
+                return self.getTokens(VBScriptParser.DOT)
+            else:
+                return self.getToken(VBScriptParser.DOT, i)
+
+        def argList(self):
+            return self.getTypedRuleContext(VBScriptParser.ArgListContext,0)
+
+
+        def procedureCall(self):
+            return self.getTypedRuleContext(VBScriptParser.ProcedureCallContext,0)
+
+
+        def LPAREN(self):
+            return self.getToken(VBScriptParser.LPAREN, 0)
+
+        def RPAREN(self):
+            return self.getToken(VBScriptParser.RPAREN, 0)
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_procedureCall
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterProcedureCall" ):
+                listener.enterProcedureCall(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitProcedureCall" ):
+                listener.exitProcedureCall(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitProcedureCall" ):
+                return visitor.visitProcedureCall(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def procedureCall(self):
+
+        localctx = VBScriptParser.ProcedureCallContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 20, self.RULE_procedureCall)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 167
+            self.match(VBScriptParser.IDENTIFIER)
+            self.state = 168
+            self.match(VBScriptParser.DOT)
+            self.state = 169
+            self.match(VBScriptParser.IDENTIFIER)
+            self.state = 178
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,19,self._ctx)
+            if la_ == 1:
+                self.state = 170
+                self.match(VBScriptParser.LPAREN)
+                self.state = 172
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & 1074200576) != 0):
+                    self.state = 171
+                    self.argList()
+
+
+                self.state = 174
+                self.match(VBScriptParser.RPAREN)
+
+            elif la_ == 2:
+                self.state = 175
+                self.argList()
+
+            elif la_ == 3:
+                self.state = 176
+                self.match(VBScriptParser.DOT)
+                self.state = 177
+                self.procedureCall()
+
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ArgListContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def expr(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(VBScriptParser.ExprContext)
+            else:
+                return self.getTypedRuleContext(VBScriptParser.ExprContext,i)
+
+
+        def COMMA(self, i:int=None):
+            if i is None:
+                return self.getTokens(VBScriptParser.COMMA)
+            else:
+                return self.getToken(VBScriptParser.COMMA, i)
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_argList
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterArgList" ):
+                listener.enterArgList(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitArgList" ):
+                listener.exitArgList(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitArgList" ):
+                return visitor.visitArgList(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def argList(self):
+
+        localctx = VBScriptParser.ArgListContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 22, self.RULE_argList)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 180
+            self.expr()
+            self.state = 185
+            self._errHandler.sync(self)
+            _alt = self._interp.adaptivePredict(self._input,20,self._ctx)
+            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
+                if _alt==1:
+                    self.state = 181
+                    self.match(VBScriptParser.COMMA)
+                    self.state = 182
+                    self.expr() 
+                self.state = 187
+                self._errHandler.sync(self)
+                _alt = self._interp.adaptivePredict(self._input,20,self._ctx)
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class AssignmentContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+            self.lhs = None # AssignableContext
+            self.rhs = None # ExprWithOpContext
+
+        def EQ(self):
+            return self.getToken(VBScriptParser.EQ, 0)
+
+        def assignable(self):
+            return self.getTypedRuleContext(VBScriptParser.AssignableContext,0)
+
+
+        def exprWithOp(self):
+            return self.getTypedRuleContext(VBScriptParser.ExprWithOpContext,0)
+
+
+        def SET(self):
+            return self.getToken(VBScriptParser.SET, 0)
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_assignment
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssignment" ):
+                listener.enterAssignment(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssignment" ):
+                listener.exitAssignment(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssignment" ):
+                return visitor.visitAssignment(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def assignment(self):
+
+        localctx = VBScriptParser.AssignmentContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 24, self.RULE_assignment)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 189
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            if _la==4:
+                self.state = 188
+                self.match(VBScriptParser.SET)
+
+
+            self.state = 191
+            localctx.lhs = self.assignable()
+            self.state = 192
+            self.match(VBScriptParser.EQ)
+            self.state = 193
+            localctx.rhs = self.exprWithOp()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class AssignableContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def IDENTIFIER(self):
+            return self.getToken(VBScriptParser.IDENTIFIER, 0)
+
+        def functionCall(self):
+            return self.getTypedRuleContext(VBScriptParser.FunctionCallContext,0)
+
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_assignable
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssignable" ):
+                listener.enterAssignable(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssignable" ):
+                listener.exitAssignable(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssignable" ):
+                return visitor.visitAssignable(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def assignable(self):
+
+        localctx = VBScriptParser.AssignableContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 26, self.RULE_assignable)
+        try:
+            self.state = 197
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,22,self._ctx)
+            if la_ == 1:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 195
+                self.match(VBScriptParser.IDENTIFIER)
+                pass
+
+            elif la_ == 2:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 196
+                self.functionCall()
+                pass
+
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ExprWithOpContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+            self.left = None # ValueExprContext
+            self.op = None # Token
+            self.right = None # ValueExprContext
+
+        def valueExpr(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(VBScriptParser.ValueExprContext)
+            else:
+                return self.getTypedRuleContext(VBScriptParser.ValueExprContext,i)
+
+
+        def PLUS(self):
+            return self.getToken(VBScriptParser.PLUS, 0)
+
+        def MINUS(self):
+            return self.getToken(VBScriptParser.MINUS, 0)
+
+        def DIV(self):
+            return self.getToken(VBScriptParser.DIV, 0)
+
+        def STAR(self):
+            return self.getToken(VBScriptParser.STAR, 0)
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_exprWithOp
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExprWithOp" ):
+                listener.enterExprWithOp(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExprWithOp" ):
+                listener.exitExprWithOp(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExprWithOp" ):
+                return visitor.visitExprWithOp(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def exprWithOp(self):
+
+        localctx = VBScriptParser.ExprWithOpContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 28, self.RULE_exprWithOp)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 199
+            localctx.left = self.valueExpr()
+            self.state = 202
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 15728640) != 0):
+                self.state = 200
+                localctx.op = self._input.LT(1)
+                _la = self._input.LA(1)
+                if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 15728640) != 0)):
+                    localctx.op = self._errHandler.recoverInline(self)
+                else:
+                    self._errHandler.reportMatch(self)
+                    self.consume()
+                self.state = 201
+                localctx.right = self.valueExpr()
+
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ComparisonContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+            self.left = None # ExprContext
+            self.right = None # ExprContext
+
+        def EQ(self):
+            return self.getToken(VBScriptParser.EQ, 0)
+
+        def expr(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(VBScriptParser.ExprContext)
+            else:
+                return self.getTypedRuleContext(VBScriptParser.ExprContext,i)
+
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_comparison
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterComparison" ):
+                listener.enterComparison(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitComparison" ):
+                listener.exitComparison(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitComparison" ):
+                return visitor.visitComparison(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def comparison(self):
+
+        localctx = VBScriptParser.ComparisonContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 30, self.RULE_comparison)
+        try:
+            self.state = 212
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,24,self._ctx)
+            if la_ == 1:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 204
+                localctx.left = self.expr()
+                self.state = 205
+                self.match(VBScriptParser.EQ)
+                self.state = 206
+                localctx.right = self.expr()
+                pass
+
+            elif la_ == 2:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 208
+                localctx.left = self.expr()
+                self.state = 209
+                self.match(VBScriptParser.EQ)
+                self.state = 210
+                localctx.right = self.expr()
+                pass
+
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ConcatenationContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def primaryExpr(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(VBScriptParser.PrimaryExprContext)
+            else:
+                return self.getTypedRuleContext(VBScriptParser.PrimaryExprContext,i)
+
+
+        def AMP(self, i:int=None):
+            if i is None:
+                return self.getTokens(VBScriptParser.AMP)
+            else:
+                return self.getToken(VBScriptParser.AMP, i)
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_concatenation
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterConcatenation" ):
+                listener.enterConcatenation(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitConcatenation" ):
+                listener.exitConcatenation(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitConcatenation" ):
+                return visitor.visitConcatenation(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def concatenation(self):
+
+        localctx = VBScriptParser.ConcatenationContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 32, self.RULE_concatenation)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 214
+            self.primaryExpr(0)
+            self.state = 215
+            self.match(VBScriptParser.AMP)
+            self.state = 216
+            self.primaryExpr(0)
+            self.state = 221
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            while _la==19:
+                self.state = 217
+                self.match(VBScriptParser.AMP)
+                self.state = 218
+                self.primaryExpr(0)
+                self.state = 223
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ExprContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_expr
+
+     
+        def copyFrom(self, ctx:ParserRuleContext):
+            super().copyFrom(ctx)
+
+
+
+    class ExprChainedContext(ExprContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a VBScriptParser.ExprContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def primaryExpr(self):
+            return self.getTypedRuleContext(VBScriptParser.PrimaryExprContext,0)
+
+        def DOT(self, i:int=None):
+            if i is None:
+                return self.getTokens(VBScriptParser.DOT)
+            else:
+                return self.getToken(VBScriptParser.DOT, i)
+        def chainedCall(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(VBScriptParser.ChainedCallContext)
+            else:
+                return self.getTypedRuleContext(VBScriptParser.ChainedCallContext,i)
+
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExprChained" ):
+                listener.enterExprChained(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExprChained" ):
+                listener.exitExprChained(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExprChained" ):
+                return visitor.visitExprChained(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+    def expr(self):
+
+        localctx = VBScriptParser.ExprContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 34, self.RULE_expr)
+        try:
+            localctx = VBScriptParser.ExprChainedContext(self, localctx)
+            self.enterOuterAlt(localctx, 1)
+            self.state = 224
+            self.primaryExpr(0)
+            self.state = 229
+            self._errHandler.sync(self)
+            _alt = self._interp.adaptivePredict(self._input,26,self._ctx)
+            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
+                if _alt==1:
+                    self.state = 225
+                    self.match(VBScriptParser.DOT)
+                    self.state = 226
+                    self.chainedCall() 
+                self.state = 231
+                self._errHandler.sync(self)
+                _alt = self._interp.adaptivePredict(self._input,26,self._ctx)
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class PrimaryExprContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_primaryExpr
+
+     
+        def copyFrom(self, ctx:ParserRuleContext):
+            super().copyFrom(ctx)
+
+
+    class ExprFuncContext(PrimaryExprContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a VBScriptParser.PrimaryExprContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def functionCall(self):
+            return self.getTypedRuleContext(VBScriptParser.FunctionCallContext,0)
+
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExprFunc" ):
+                listener.enterExprFunc(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExprFunc" ):
+                listener.exitExprFunc(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExprFunc" ):
+                return visitor.visitExprFunc(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class ExprParenContext(PrimaryExprContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a VBScriptParser.PrimaryExprContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def LPAREN(self):
+            return self.getToken(VBScriptParser.LPAREN, 0)
+        def expr(self):
+            return self.getTypedRuleContext(VBScriptParser.ExprContext,0)
+
+        def RPAREN(self):
+            return self.getToken(VBScriptParser.RPAREN, 0)
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExprParen" ):
+                listener.enterExprParen(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExprParen" ):
+                listener.exitExprParen(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExprParen" ):
+                return visitor.visitExprParen(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class ExprSubContext(PrimaryExprContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a VBScriptParser.PrimaryExprContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def primaryExpr(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(VBScriptParser.PrimaryExprContext)
+            else:
+                return self.getTypedRuleContext(VBScriptParser.PrimaryExprContext,i)
+
+        def MINUS(self):
+            return self.getToken(VBScriptParser.MINUS, 0)
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExprSub" ):
+                listener.enterExprSub(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExprSub" ):
+                listener.exitExprSub(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExprSub" ):
+                return visitor.visitExprSub(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class ExprConcatContext(PrimaryExprContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a VBScriptParser.PrimaryExprContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def primaryExpr(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(VBScriptParser.PrimaryExprContext)
+            else:
+                return self.getTypedRuleContext(VBScriptParser.PrimaryExprContext,i)
+
+        def AMP(self):
+            return self.getToken(VBScriptParser.AMP, 0)
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExprConcat" ):
+                listener.enterExprConcat(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExprConcat" ):
+                listener.exitExprConcat(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExprConcat" ):
+                return visitor.visitExprConcat(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class ExprProcContext(PrimaryExprContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a VBScriptParser.PrimaryExprContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def procedureCall(self):
+            return self.getTypedRuleContext(VBScriptParser.ProcedureCallContext,0)
+
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExprProc" ):
+                listener.enterExprProc(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExprProc" ):
+                listener.exitExprProc(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExprProc" ):
+                return visitor.visitExprProc(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class ExprAddContext(PrimaryExprContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a VBScriptParser.PrimaryExprContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def primaryExpr(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(VBScriptParser.PrimaryExprContext)
+            else:
+                return self.getTypedRuleContext(VBScriptParser.PrimaryExprContext,i)
+
+        def PLUS(self):
+            return self.getToken(VBScriptParser.PLUS, 0)
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExprAdd" ):
+                listener.enterExprAdd(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExprAdd" ):
+                listener.exitExprAdd(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExprAdd" ):
+                return visitor.visitExprAdd(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class ExprDivContext(PrimaryExprContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a VBScriptParser.PrimaryExprContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def primaryExpr(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(VBScriptParser.PrimaryExprContext)
+            else:
+                return self.getTypedRuleContext(VBScriptParser.PrimaryExprContext,i)
+
+        def DIV(self):
+            return self.getToken(VBScriptParser.DIV, 0)
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExprDiv" ):
+                listener.enterExprDiv(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExprDiv" ):
+                listener.exitExprDiv(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExprDiv" ):
+                return visitor.visitExprDiv(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class ExprStringContext(PrimaryExprContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a VBScriptParser.PrimaryExprContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def STRING(self):
+            return self.getToken(VBScriptParser.STRING, 0)
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExprString" ):
+                listener.enterExprString(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExprString" ):
+                listener.exitExprString(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExprString" ):
+                return visitor.visitExprString(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class ExprIdentContext(PrimaryExprContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a VBScriptParser.PrimaryExprContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def IDENTIFIER(self):
+            return self.getToken(VBScriptParser.IDENTIFIER, 0)
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExprIdent" ):
+                listener.enterExprIdent(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExprIdent" ):
+                listener.exitExprIdent(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExprIdent" ):
+                return visitor.visitExprIdent(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class ExprMultContext(PrimaryExprContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a VBScriptParser.PrimaryExprContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def primaryExpr(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(VBScriptParser.PrimaryExprContext)
+            else:
+                return self.getTypedRuleContext(VBScriptParser.PrimaryExprContext,i)
+
+        def STAR(self):
+            return self.getToken(VBScriptParser.STAR, 0)
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExprMult" ):
+                listener.enterExprMult(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExprMult" ):
+                listener.exitExprMult(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExprMult" ):
+                return visitor.visitExprMult(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class ExprNumberContext(PrimaryExprContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a VBScriptParser.PrimaryExprContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def NUMBER(self):
+            return self.getToken(VBScriptParser.NUMBER, 0)
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExprNumber" ):
+                listener.enterExprNumber(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExprNumber" ):
+                listener.exitExprNumber(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExprNumber" ):
+                return visitor.visitExprNumber(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+    def primaryExpr(self, _p:int=0):
+        _parentctx = self._ctx
+        _parentState = self.state
+        localctx = VBScriptParser.PrimaryExprContext(self, self._ctx, _parentState)
+        _prevctx = localctx
+        _startState = 36
+        self.enterRecursionRule(localctx, 36, self.RULE_primaryExpr, _p)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 242
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,27,self._ctx)
+            if la_ == 1:
+                localctx = VBScriptParser.ExprFuncContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+
+                self.state = 233
+                self.functionCall()
+                pass
+
+            elif la_ == 2:
+                localctx = VBScriptParser.ExprProcContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+                self.state = 234
+                self.procedureCall()
+                pass
+
+            elif la_ == 3:
+                localctx = VBScriptParser.ExprIdentContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+                self.state = 235
+                self.match(VBScriptParser.IDENTIFIER)
+                pass
+
+            elif la_ == 4:
+                localctx = VBScriptParser.ExprStringContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+                self.state = 236
+                self.match(VBScriptParser.STRING)
+                pass
+
+            elif la_ == 5:
+                localctx = VBScriptParser.ExprNumberContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+                self.state = 237
+                self.match(VBScriptParser.NUMBER)
+                pass
+
+            elif la_ == 6:
+                localctx = VBScriptParser.ExprParenContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+                self.state = 238
+                self.match(VBScriptParser.LPAREN)
+                self.state = 239
+                self.expr()
+                self.state = 240
+                self.match(VBScriptParser.RPAREN)
+                pass
+
+
+            self._ctx.stop = self._input.LT(-1)
+            self.state = 261
+            self._errHandler.sync(self)
+            _alt = self._interp.adaptivePredict(self._input,29,self._ctx)
+            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
+                if _alt==1:
+                    if self._parseListeners is not None:
+                        self.triggerExitRuleEvent()
+                    _prevctx = localctx
+                    self.state = 259
+                    self._errHandler.sync(self)
+                    la_ = self._interp.adaptivePredict(self._input,28,self._ctx)
+                    if la_ == 1:
+                        localctx = VBScriptParser.ExprConcatContext(self, VBScriptParser.PrimaryExprContext(self, _parentctx, _parentState))
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_primaryExpr)
+                        self.state = 244
+                        if not self.precpred(self._ctx, 5):
+                            from antlr4.error.Errors import FailedPredicateException
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 5)")
+                        self.state = 245
+                        self.match(VBScriptParser.AMP)
+                        self.state = 246
+                        self.primaryExpr(6)
+                        pass
+
+                    elif la_ == 2:
+                        localctx = VBScriptParser.ExprAddContext(self, VBScriptParser.PrimaryExprContext(self, _parentctx, _parentState))
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_primaryExpr)
+                        self.state = 247
+                        if not self.precpred(self._ctx, 4):
+                            from antlr4.error.Errors import FailedPredicateException
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 4)")
+                        self.state = 248
+                        self.match(VBScriptParser.PLUS)
+                        self.state = 249
+                        self.primaryExpr(5)
+                        pass
+
+                    elif la_ == 3:
+                        localctx = VBScriptParser.ExprSubContext(self, VBScriptParser.PrimaryExprContext(self, _parentctx, _parentState))
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_primaryExpr)
+                        self.state = 250
+                        if not self.precpred(self._ctx, 3):
+                            from antlr4.error.Errors import FailedPredicateException
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 3)")
+                        self.state = 251
+                        self.match(VBScriptParser.MINUS)
+                        self.state = 252
+                        self.primaryExpr(4)
+                        pass
+
+                    elif la_ == 4:
+                        localctx = VBScriptParser.ExprMultContext(self, VBScriptParser.PrimaryExprContext(self, _parentctx, _parentState))
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_primaryExpr)
+                        self.state = 253
+                        if not self.precpred(self._ctx, 2):
+                            from antlr4.error.Errors import FailedPredicateException
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 2)")
+                        self.state = 254
+                        self.match(VBScriptParser.STAR)
+                        self.state = 255
+                        self.primaryExpr(3)
+                        pass
+
+                    elif la_ == 5:
+                        localctx = VBScriptParser.ExprDivContext(self, VBScriptParser.PrimaryExprContext(self, _parentctx, _parentState))
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_primaryExpr)
+                        self.state = 256
+                        if not self.precpred(self._ctx, 1):
+                            from antlr4.error.Errors import FailedPredicateException
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 1)")
+                        self.state = 257
+                        self.match(VBScriptParser.DIV)
+                        self.state = 258
+                        self.primaryExpr(2)
+                        pass
+
+             
+                self.state = 263
+                self._errHandler.sync(self)
+                _alt = self._interp.adaptivePredict(self._input,29,self._ctx)
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.unrollRecursionContexts(_parentctx)
+        return localctx
+
+
+    class ChainedCallContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def IDENTIFIER(self):
+            return self.getToken(VBScriptParser.IDENTIFIER, 0)
+
+        def LPAREN(self):
+            return self.getToken(VBScriptParser.LPAREN, 0)
+
+        def RPAREN(self):
+            return self.getToken(VBScriptParser.RPAREN, 0)
+
+        def argList(self):
+            return self.getTypedRuleContext(VBScriptParser.ArgListContext,0)
+
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_chainedCall
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterChainedCall" ):
+                listener.enterChainedCall(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitChainedCall" ):
+                listener.exitChainedCall(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitChainedCall" ):
+                return visitor.visitChainedCall(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def chainedCall(self):
+
+        localctx = VBScriptParser.ChainedCallContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 38, self.RULE_chainedCall)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 264
+            self.match(VBScriptParser.IDENTIFIER)
+            self.state = 270
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,31,self._ctx)
+            if la_ == 1:
+                self.state = 265
+                self.match(VBScriptParser.LPAREN)
+                self.state = 267
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & 1074200576) != 0):
+                    self.state = 266
+                    self.argList()
+
+
+                self.state = 269
+                self.match(VBScriptParser.RPAREN)
+
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ValueExprContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def functionCall(self):
+            return self.getTypedRuleContext(VBScriptParser.FunctionCallContext,0)
+
+
+        def procedureCall(self):
+            return self.getTypedRuleContext(VBScriptParser.ProcedureCallContext,0)
+
+
+        def expr(self):
+            return self.getTypedRuleContext(VBScriptParser.ExprContext,0)
+
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_valueExpr
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterValueExpr" ):
+                listener.enterValueExpr(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitValueExpr" ):
+                listener.exitValueExpr(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitValueExpr" ):
+                return visitor.visitValueExpr(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def valueExpr(self):
+
+        localctx = VBScriptParser.ValueExprContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 40, self.RULE_valueExpr)
+        try:
+            self.state = 275
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,32,self._ctx)
+            if la_ == 1:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 272
+                self.functionCall()
+                pass
+
+            elif la_ == 2:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 273
+                self.procedureCall()
+                pass
+
+            elif la_ == 3:
+                self.enterOuterAlt(localctx, 3)
+                self.state = 274
+                self.expr()
+                pass
+
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ExecuteglobalStmtContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def EXECUTEGLOBAL(self):
+            return self.getToken(VBScriptParser.EXECUTEGLOBAL, 0)
+
+        def expr(self):
+            return self.getTypedRuleContext(VBScriptParser.ExprContext,0)
+
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_executeglobalStmt
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExecuteglobalStmt" ):
+                listener.enterExecuteglobalStmt(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExecuteglobalStmt" ):
+                listener.exitExecuteglobalStmt(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExecuteglobalStmt" ):
+                return visitor.visitExecuteglobalStmt(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def executeglobalStmt(self):
+
+        localctx = VBScriptParser.ExecuteglobalStmtContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 42, self.RULE_executeglobalStmt)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 277
+            self.match(VBScriptParser.EXECUTEGLOBAL)
+            self.state = 278
+            self.expr()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class BlockContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def line(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(VBScriptParser.LineContext)
+            else:
+                return self.getTypedRuleContext(VBScriptParser.LineContext,i)
+
+
+        def getRuleIndex(self):
+            return VBScriptParser.RULE_block
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterBlock" ):
+                listener.enterBlock(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitBlock" ):
+                listener.exitBlock(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitBlock" ):
+                return visitor.visitBlock(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def block(self):
+
+        localctx = VBScriptParser.BlockContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 44, self.RULE_block)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 283
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 69793712178) != 0):
+                self.state = 280
+                self.line()
+                self.state = 285
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+
+    def sempred(self, localctx:RuleContext, ruleIndex:int, predIndex:int):
+        if self._predicates == None:
+            self._predicates = dict()
+        self._predicates[18] = self.primaryExpr_sempred
+        pred = self._predicates.get(ruleIndex, None)
+        if pred is None:
+            raise Exception("No predicate with index:" + str(ruleIndex))
+        else:
+            return pred(localctx, predIndex)
+
+    def primaryExpr_sempred(self, localctx:PrimaryExprContext, predIndex:int):
+            if predIndex == 0:
+                return self.precpred(self._ctx, 5)
+         
+
+            if predIndex == 1:
+                return self.precpred(self._ctx, 4)
+         
+
+            if predIndex == 2:
+                return self.precpred(self._ctx, 3)
+         
+
+            if predIndex == 3:
+                return self.precpred(self._ctx, 2)
+         
+
+            if predIndex == 4:
+                return self.precpred(self._ctx, 1)
+         
+
+
+
+
