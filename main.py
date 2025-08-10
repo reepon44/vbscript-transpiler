@@ -14,10 +14,10 @@ def translate(code: str):
     parser = VBScriptParser(stream)
     tree = parser.prog()
     # Generate AST graph
-    print(tree.toStringTree(recog=parser))
-    graph = antlr_tree_to_pydot(tree)
-    graph.write_png("ast.png")
-    print("AST written to ast.png")
+    #print(tree.toStringTree(recog=parser))
+    #graph = antlr_tree_to_pydot(tree)
+    #graph.write_png("ast.png")
+    #print("AST written to ast.png")
 
     visitor = VBScriptToIRVisitor()
     ir_nodes = visitor.visit(tree)
@@ -74,6 +74,8 @@ if __name__ == "__main__":
     group.add_argument("--file", type=str, help="Path to the VBScript file.")
     group.add_argument("--code", type=str, help="Raw VBScript code string.")
 
+    parser.add_argument("--output", type=str, required=True, help="Path to the output file")
+
     args = parser.parse_args()
 
     if args.file:
@@ -81,5 +83,10 @@ if __name__ == "__main__":
             vbscript_code = f.read()
     else:
         vbscript_code = args.code
+
+    python_code = translate(vbscript_code)
+
+    with open(args.output, 'w', encoding='utf-8') as output:
+        output.write(python_code)
 
     print("\nWrote code to target file!")
