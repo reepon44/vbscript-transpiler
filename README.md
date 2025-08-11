@@ -13,7 +13,10 @@ Wenn die Visualisierung des AST gewünscht ist muss Graphviz [https://graphviz.o
 
 Die Grammatik liegt in dem Verzeichnis Grammar. Wurde die Grammatik angepasst, kann neuer Quellcode für den Lexer, Parser, Visitor etc. generiert werden
 Dafür ist eine aktuelle Java Installation notwendig.
-Die Grammatik kann mit dem Befehl "java -Xmx500M -cp "antlr-4.13.2-complete.jar" org.antlr.v4.Tool -Dlanguage=Python3 .\grammar\VBScript.g4 -visitor -o .\gen"
+Die Grammatik kann mit dem Befehl 
+
+"java -Xmx500M -cp "antlr-4.13.2-complete.jar" org.antlr.v4.Tool -Dlanguage=Python3 .\grammar\VBScript.g4 -visitor -o .\gen"
+
 generiert werden. Der Quellcode wird im Verzeichnis gen/grammar erzeugt und muss in den gen Ordner kopiert werden.
 
 ## Transpiler
